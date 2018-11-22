@@ -1,0 +1,10 @@
+C:\Users\Darya_Zhukova\source\repos\AutoEnv\AutoEnv\bin\Debug\AutoEnv.exe.config
+C:\Users\Darya_Zhukova\source\repos\AutoEnv\AutoEnv\bin\Debug\AutoEnv.exe
+C:\Users\Darya_Zhukova\source\repos\AutoEnv\AutoEnv\bin\Debug\AutoEnv.pdb
+C:\Users\Darya_Zhukova\source\repos\AutoEnv\AutoEnv\obj\Debug\AutoEnv.csprojAssemblyReference.cache
+C:\Users\Darya_Zhukova\source\repos\AutoEnv\AutoEnv\obj\Debug\AutoEnv.Form1.resources
+C:\Users\Darya_Zhukova\source\repos\AutoEnv\AutoEnv\obj\Debug\AutoEnv.Properties.Resources.resources
+C:\Users\Darya_Zhukova\source\repos\AutoEnv\AutoEnv\obj\Debug\AutoEnv.csproj.GenerateResource.cache
+C:\Users\Darya_Zhukova\source\repos\AutoEnv\AutoEnv\obj\Debug\AutoEnv.csproj.CoreCompileInputs.cache
+C:\Users\Darya_Zhukova\source\repos\AutoEnv\AutoEnv\obj\Debug\AutoEnv.exe
+C:\Users\Darya_Zhukova\source\repos\AutoEnv\AutoEnv\obj\Debug\AutoEnv.pdb
