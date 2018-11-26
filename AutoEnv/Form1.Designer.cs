@@ -33,6 +33,7 @@
             this.Iisbutton = new System.Windows.Forms.Button();
             this.Iisvbutton = new System.Windows.Forms.Button();
             this.Outputbox = new System.Windows.Forms.RichTextBox();
+            this.IISconf = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -57,6 +58,7 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Controls.Add(this.Iisbutton);
+            this.flowLayoutPanel1.Controls.Add(this.IISconf);
             this.flowLayoutPanel1.Controls.Add(this.Iisvbutton);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 3);
@@ -76,7 +78,7 @@
             // 
             // Iisvbutton
             // 
-            this.Iisvbutton.Location = new System.Drawing.Point(84, 3);
+            this.Iisvbutton.Location = new System.Drawing.Point(165, 3);
             this.Iisvbutton.Name = "Iisvbutton";
             this.Iisvbutton.Size = new System.Drawing.Size(75, 23);
             this.Iisvbutton.TabIndex = 1;
@@ -93,6 +95,16 @@
             this.Outputbox.Size = new System.Drawing.Size(478, 175);
             this.Outputbox.TabIndex = 1;
             this.Outputbox.Text = "";
+            // 
+            // IISconf
+            // 
+            this.IISconf.Location = new System.Drawing.Point(84, 3);
+            this.IISconf.Name = "IISconf";
+            this.IISconf.Size = new System.Drawing.Size(75, 23);
+            this.IISconf.TabIndex = 2;
+            this.IISconf.Text = "IIS configure";
+            this.IISconf.UseVisualStyleBackColor = true;
+            this.IISconf.Click += new System.EventHandler(this.IISconf_Click);
             // 
             // Form1
             // 
@@ -115,6 +127,7 @@
         private System.Windows.Forms.Button Iisbutton;
         private System.Windows.Forms.Button Iisvbutton;
         private System.Windows.Forms.RichTextBox Outputbox;
+        private System.Windows.Forms.Button IISconf;
     }
 }
 
