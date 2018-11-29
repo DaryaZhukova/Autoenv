@@ -6,6 +6,8 @@
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
+        public Installfeatures fich = new Installfeatures();
+
 
         /// <summary>
         /// Clean up any resources being used.
@@ -30,10 +32,12 @@
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.Iisbutton = new System.Windows.Forms.Button();
             this.Iisvbutton = new System.Windows.Forms.Button();
-            this.Outputbox = new System.Windows.Forms.RichTextBox();
+            this.Iisbutton = new System.Windows.Forms.Button();
             this.IISconf = new System.Windows.Forms.Button();
+            this.advbtn = new System.Windows.Forms.Button();
+            this.iisfichtree = new System.Windows.Forms.TreeView();
+            this.Outputbox = new System.Windows.Forms.RichTextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -50,21 +54,33 @@
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(484, 361);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 65.04065F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 34.95935F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(552, 492);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Controls.Add(this.Iisbutton);
             this.flowLayoutPanel1.Controls.Add(this.IISconf);
+            this.flowLayoutPanel1.Controls.Add(this.advbtn);
             this.flowLayoutPanel1.Controls.Add(this.Iisvbutton);
+            this.flowLayoutPanel1.Controls.Add(this.iisfichtree);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 3);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(478, 174);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(546, 313);
             this.flowLayoutPanel1.TabIndex = 0;
+            // 
+            // Iisvbutton
+            // 
+            this.Iisvbutton.Location = new System.Drawing.Point(237, 3);
+            this.Iisvbutton.Name = "Iisvbutton";
+            this.Iisvbutton.Size = new System.Drawing.Size(75, 23);
+            this.Iisvbutton.TabIndex = 1;
+            this.Iisvbutton.Text = "Install Advanced";
+            this.Iisvbutton.UseVisualStyleBackColor = true;
+            this.Iisvbutton.Click += new System.EventHandler(this.Iisvbutton_Click);
             // 
             // Iisbutton
             // 
@@ -76,26 +92,6 @@
             this.Iisbutton.UseVisualStyleBackColor = true;
             this.Iisbutton.Click += new System.EventHandler(this.Iisbutton_Click);
             // 
-            // Iisvbutton
-            // 
-            this.Iisvbutton.Location = new System.Drawing.Point(165, 3);
-            this.Iisvbutton.Name = "Iisvbutton";
-            this.Iisvbutton.Size = new System.Drawing.Size(75, 23);
-            this.Iisvbutton.TabIndex = 1;
-            this.Iisvbutton.Text = "IIS version";
-            this.Iisvbutton.UseVisualStyleBackColor = true;
-            this.Iisvbutton.Click += new System.EventHandler(this.Iisvbutton_Click);
-            // 
-            // Outputbox
-            // 
-            this.Outputbox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Outputbox.Location = new System.Drawing.Point(3, 183);
-            this.Outputbox.Name = "Outputbox";
-            this.Outputbox.ReadOnly = true;
-            this.Outputbox.Size = new System.Drawing.Size(478, 175);
-            this.Outputbox.TabIndex = 1;
-            this.Outputbox.Text = "";
-            // 
             // IISconf
             // 
             this.IISconf.Location = new System.Drawing.Point(84, 3);
@@ -106,16 +102,50 @@
             this.IISconf.UseVisualStyleBackColor = true;
             this.IISconf.Click += new System.EventHandler(this.IISconf_Click);
             // 
+            // advbtn
+            // 
+            this.advbtn.AutoSize = true;
+            this.advbtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.advbtn.Location = new System.Drawing.Point(165, 3);
+            this.advbtn.Name = "advbtn";
+            this.advbtn.Size = new System.Drawing.Size(66, 23);
+            this.advbtn.TabIndex = 4;
+            this.advbtn.Text = "Advanced";
+            this.advbtn.UseVisualStyleBackColor = true;
+            this.advbtn.Click += new System.EventHandler(this.advbtn_Click);
+            // 
+            // iisfichtree
+            // 
+            this.iisfichtree.CheckBoxes = true;
+            this.iisfichtree.Location = new System.Drawing.Point(318, 3);
+            this.iisfichtree.Name = "iisfichtree";
+            this.iisfichtree.Size = new System.Drawing.Size(223, 310);
+            this.iisfichtree.TabIndex = 3;
+            this.iisfichtree.Visible = false;
+            this.iisfichtree.AfterCheck += new System.Windows.Forms.TreeViewEventHandler(this.iisfichtree_AfterCheck);
+            this.iisfichtree.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.iisfichtree_AfterSelect);
+            // 
+            // Outputbox
+            // 
+            this.Outputbox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Outputbox.Location = new System.Drawing.Point(3, 322);
+            this.Outputbox.Name = "Outputbox";
+            this.Outputbox.ReadOnly = true;
+            this.Outputbox.Size = new System.Drawing.Size(546, 167);
+            this.Outputbox.TabIndex = 1;
+            this.Outputbox.Text = "";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(484, 361);
+            this.ClientSize = new System.Drawing.Size(552, 492);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Form1";
             this.Text = "AutoEnv";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -128,6 +158,8 @@
         private System.Windows.Forms.Button Iisvbutton;
         private System.Windows.Forms.RichTextBox Outputbox;
         private System.Windows.Forms.Button IISconf;
+        private System.Windows.Forms.TreeView iisfichtree;
+        private System.Windows.Forms.Button advbtn;
     }
 }
 
