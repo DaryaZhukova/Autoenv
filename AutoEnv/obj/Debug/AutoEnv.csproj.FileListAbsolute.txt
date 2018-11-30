@@ -8,3 +8,5 @@ C:\Users\Darya_Zhukova\source\repos\AutoEnv\AutoEnv\obj\Debug\AutoEnv.csproj.Gen
 C:\Users\Darya_Zhukova\source\repos\AutoEnv\AutoEnv\obj\Debug\AutoEnv.csproj.CoreCompileInputs.cache
 C:\Users\Darya_Zhukova\source\repos\AutoEnv\AutoEnv\obj\Debug\AutoEnv.exe
 C:\Users\Darya_Zhukova\source\repos\AutoEnv\AutoEnv\obj\Debug\AutoEnv.pdb
+C:\Users\Darya_Zhukova\source\repos\AutoEnv\AutoEnv\obj\Debug\Interop.NetFwTypeLib.dll
+C:\Users\Darya_Zhukova\source\repos\AutoEnv\AutoEnv\obj\Debug\AutoEnv.csproj.ResolveComReference.cache
